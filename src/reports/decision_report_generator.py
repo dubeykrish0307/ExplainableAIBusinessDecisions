@@ -1,7 +1,9 @@
 from pathlib import Path
 from datetime import datetime
 
-REPORT_DIR = Path("reports/decision_reports")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+REPORT_DIR = PROJECT_ROOT / "reports" / "decision_reports"
+REPORT_DIR.mkdir(parents=True, exist_ok=True)
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 def decision_label(risk_prob: float) -> str:

@@ -21,6 +21,8 @@ from src.explainability.shap_explainer import (
     generate_decision_report
 )
 
+from src.reports.decision_report_generator import generate_decision_report_file
+
 st.set_page_config(page_title="Explainable Credit Risk System", layout="wide")
 
 st.title("Explainable Credit Risk Decision System")
@@ -117,3 +119,20 @@ plot_local_explanation(explainer, shap_values, X, index)
 st.subheader("Decision Justification")
 report = generate_decision_report(X, shap_values, index, threshold=0.02)
 st.text(report)
+
+st.subheader("Decision Justification")
+report = generate_decision_report(X, shap_values, index, threshold=0.02)
+st.text(report)
+
+st.subheader("Audit & Compliance")
+
+if st.button("Generate Audit Decision Report"):
+    report_path = generate_decision_report_file(
+        applicant_index=index,
+        risk_prob=risk_prob,
+        justification_text=report
+    )
+
+    st.success("Decision report generated successfully.")
+    st.code(str(report_path))
+
