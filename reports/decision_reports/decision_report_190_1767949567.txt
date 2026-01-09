@@ -1,0 +1,57 @@
+CREDIT RISK DECISION REPORT
+===========================
+
+Applicant Index: 190
+Timestamp (UTC): 2026-01-09 14:36:07
+
+Risk Probability:
+-----------------
+Estimated Default Risk: 12.47%
+
+Decision:
+---------
+APPROVE
+
+Decision Justification:
+-----------------------
+Decision Justification:
+
+- loan_duration_months: value=24 increases risk (impact=0.078)
+- credit_amount: value=4591 increases risk (impact=0.135)
+- savings_account: value=3 reduces risk (impact=-0.613)
+- employment_duration: value=2 increases risk (impact=0.026)
+- installment_rate: value=2 reduces risk (impact=-0.237)
+- age: value=54 reduces risk (impact=-0.268)
+- existing_credits: value=3 increases risk (impact=0.449)
+- num_dependents: value=1 reduces risk (impact=-0.039)
+- checking_account_status_A12: value=False increases risk (impact=0.125)
+- checking_account_status_A13: value=False increases risk (impact=0.036)
+- checking_account_status_A14: value=True reduces risk (impact=-1.131)
+- credit_history_A32: value=True reduces risk (impact=-0.279)
+- credit_history_A33: value=False increases risk (impact=0.051)
+- credit_history_A34: value=False increases risk (impact=0.389)
+- loan_purpose_A41: value=False increases risk (impact=0.154)
+- loan_purpose_A42: value=False increases risk (impact=0.148)
+- loan_purpose_A43: value=False increases risk (impact=0.208)
+- loan_purpose_A49: value=True reduces risk (impact=-0.536)
+- personal_status_sex_A92: value=False increases risk (impact=0.097)
+- personal_status_sex_A93: value=True reduces risk (impact=-0.351)
+- other_debtors_A102: value=False reduces risk (impact=-0.023)
+- other_debtors_A103: value=False increases risk (impact=0.059)
+- property_A122: value=True increases risk (impact=0.195)
+- property_A123: value=False reduces risk (impact=-0.087)
+- property_A124: value=False reduces risk (impact=-0.071)
+- other_installment_plans_A143: value=True reduces risk (impact=-0.118)
+- housing_A152: value=True reduces risk (impact=-0.105)
+- housing_A153: value=False increases risk (impact=0.021)
+- job_A172: value=False reduces risk (impact=-0.119)
+- job_A173: value=False reduces risk (impact=-0.367)
+- job_A174: value=True increases risk (impact=0.606)
+- telephone_A192: value=True reduces risk (impact=-0.227)
+- foreign_worker_A202: value=False increases risk (impact=0.118)
+
+Notes:
+------
+- This decision was generated using an explainable machine learning model.
+- Feature-level contributions were computed using SHAP.
+- This report is intended for audit and review purposes.
