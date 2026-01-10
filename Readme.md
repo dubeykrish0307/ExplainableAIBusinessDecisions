@@ -9,7 +9,7 @@ This project goes beyond prediction accuracy and demonstrates how machine learni
 ## 🚀 Live Application
 
 🔗 **Public Demo (Streamlit App)**  
-👉 <PASTE https://explainable-credit-risk-decision-system.streamlit.app/>
+👉 <https://explainable-credit-risk-decision-system.streamlit.app/>
 
 The deployed application allows users to:
 - Inspect individual loan applicants
@@ -79,9 +79,6 @@ explainable-credit-risk-decision-system/
 │
 ├── reports/
 │ └── decision_reports/ # Generated audit artifacts
-│
-├── scripts/
-│ └── download_dataset.py # Reproducible dataset download
 │
 ├── requirements.txt
 └── README.md
