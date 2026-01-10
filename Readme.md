@@ -62,7 +62,7 @@ This mirrors how credit decisions are handled in real financial institutions.
 ---
 
 ## 🧩 Architecture Overview
-
+```
 explainable-credit-risk-decision-system/
 ├── app/
 │ └── main.py # Streamlit application
@@ -85,6 +85,7 @@ explainable-credit-risk-decision-system/
 │
 ├── requirements.txt
 └── README.md
+```
 
 ## 🔍 Explainability (Not a Black Box)
 
@@ -158,3 +159,24 @@ This project uses the **German Credit Dataset** from the UCI Machine Learning Re
     source venv/bin/activate        # Linux/Mac
     venv\Scripts\activate           # Windows
    ```
+
+2. Install dependencies
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Run the application
+   ```
+   streamlit run app/main.py
+   ```
+
+## 🌍 Deployment
+The application is deployed on Streamlit Community Cloud to make explainable decision logic accessible to non-technical stakeholders without unnecessary infrastructure complexity.
+
+### 👤 Author
+Krish Dubey
+Bachelor’s Student — Computer Science
+Focus: Machine Learning Systems, Explainable AI, Responsible Decision-Making
+
+### 📄 License
+This project is intended for educational and demonstration purposes.
